@@ -28,9 +28,14 @@ namespace Parcial_POO
             builder.Services.AddTransient<EmpleadoPage>();
             builder.Services.AddTransient<EmpleadoViewModel>();
 
+            builder.Services.AddTransient<MainPage>();
+            builder.Services.AddTransient<MainViewModel>();
+
+            Routing.RegisterRoute(nameof(EmpleadoPage),typeof(EmpleadoPage));
+
 
 #if DEBUG
-    		builder.Logging.AddDebug();
+            builder.Logging.AddDebug();
 #endif
 
             return builder.Build();
