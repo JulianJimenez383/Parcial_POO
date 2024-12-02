@@ -38,6 +38,7 @@ namespace Parcial_POO.ViewModels
             var id = int.Parse(query["id"].ToString());
             IdEmpleado = id;
 
+
             if (IdEmpleado == 0)
             {
                 TituloPagina = "Nuevo Empleado";
