@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Parcial_POO.Views.EmpleadoPage"
+             Title="{Binding TituloPagina}">
+    <VerticalStackLayout Padding="15">
+        
+        <ActivityIndicator IsVisible="{Binding LoadingEsVisible}"
+                            IsRunning="{Binding LoadingEsVisible}"
+                           Color="Blue"
+                           HeightRequest="30"
+                           />
+
+        <Label Text="Nombre Empleado"/>
+        <Entry Text="{Binding EmpleadoDTo.NombreEmpleado}"Margin="0,0,0,10"/>
+
+        <Label Text="Cargo"/>
+        <Entry Text="{Binding EmpleadoDTo.Cargo}"Margin="0,0,0,10"/>
+
+        <Label Text="Correo"/>
+        <Entry Text="{Binding EmpleadoDTo.Correo}"Margin="0,0,0,10"/>
+
+        <Label Text="Fecha Certificacion"/>
+        <DatePicker Date="{Binding EmpleadoDTo.FechaCertificacion}"Margin="0,0,0,10"/>
+
+        <Button Text="Guardar" Command="{Binding GuardarCommand}"
+    </VerticalStackLayout>
+</ContentPage>
