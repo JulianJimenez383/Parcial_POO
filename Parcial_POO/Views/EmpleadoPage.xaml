@@ -12,17 +12,17 @@
                            />
 
         <Label Text="Nombre Empleado"/>
-        <Entry Text="{Binding EmpleadoDTo.NombreEmpleado}"Margin="0,0,0,10"/>
+        <Entry Text="{Binding EmpleadoDTo.NombreEmpleado}" Margin="0,0,0,10"/>
 
         <Label Text="Cargo"/>
-        <Entry Text="{Binding EmpleadoDTo.Cargo}"Margin="0,0,0,10"/>
+        <Entry Text="{Binding EmpleadoDTo.Cargo}" Margin="0,0,0,10"/>
 
         <Label Text="Correo"/>
-        <Entry Text="{Binding EmpleadoDTo.Correo}"Margin="0,0,0,10"/>
+        <Entry Text="{Binding EmpleadoDTo.Correo}" Margin="0,0,0,10"/>
 
         <Label Text="Fecha Certificacion"/>
-        <DatePicker Date="{Binding EmpleadoDTo.FechaCertificacion}"Margin="0,0,0,10"/>
+        <DatePicker Date="{Binding EmpleadoDTo.FechaCertificacion}" Margin="0,0,0,10"/>
 
-        <Button Text="Guardar" Command="{Binding GuardarCommand}"
+        <Button Text="Guardar" Command="{Binding GuardarCommand}" BackgroundColor="Green"/>
     </VerticalStackLayout>
 </ContentPage>

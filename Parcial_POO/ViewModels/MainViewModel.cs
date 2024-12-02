@@ -1,12 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Messaging;
+using CommunityToolkit.Mvvm.Input;
+
+using Microsoft.EntityFrameworkCore;
+using Parcial_POO.DataAccess;
+using Parcial_POO.DTOs;
+using Parcial_POO.Utilidades;
+using Parcial_POO.Modelos;
+using Microsoft.Maui.Controls.Compatibility.Platform;
 
 namespace Parcial_POO.ViewModels
 {
-    internal class MainViewModel
+    public partial class MainViewModel : ObservableObject
     {
     }
 }

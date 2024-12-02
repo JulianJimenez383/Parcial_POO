@@ -30,6 +30,7 @@ namespace Parcial_POO.ViewModels
         public EmpleadoViewModel(EmpleadoDbContext context)
         {
             _dbContex = context;
+            EmpleadoDTo.FechaCertificacion=DateTime.Now;  //asigna fecha - pendiente por corregir
 
         }
 
@@ -47,15 +48,15 @@ namespace Parcial_POO.ViewModels
             else
             {
                 TituloPagina = "Editar Empleado";
-                loadingEsVisible = true;
+                LoadingEsVisible = true;
                 await Task.Run(async () =>
                 {
                     var encontrado = await _dbContex.Empleados.FirstAsync(e => e.IdEmpleado == IdEmpleado);
                     EmpleadoDTo.IdEmpleado = encontrado.IdEmpleado;
-                    EmpleadoDTo.nombreEmpleado = encontrado.NombreEmpleado;
-                    EmpleadoDTo.cargo = encontrado.Cargo;
-                    EmpleadoDTo.correo = encontrado.Correo;
-                    EmpleadoDTo.fechaCertificacion = encontrado.FechaCertificacion;
+                    EmpleadoDTo.NombreEmpleado = encontrado.NombreEmpleado;
+                    EmpleadoDTo.Cargo = encontrado.Cargo;
+                    EmpleadoDTo.Correo = encontrado.Correo;
+                    EmpleadoDTo.FechaCertificacion = encontrado.FechaCertificacion;
 
                     MainThread.BeginInvokeOnMainThread(() => { LoadingEsVisible = false; });
 
@@ -65,7 +66,7 @@ namespace Parcial_POO.ViewModels
         [RelayCommand]
         private async Task Guardar()
         {
-            loadingEsVisible = true;
+            LoadingEsVisible = true;
             EmpleadoMensaje mensaje = new EmpleadoMensaje();
 
             await Task.Run(async () =>
@@ -109,7 +110,7 @@ namespace Parcial_POO.ViewModels
                 }
                 MainThread.BeginInvokeOnMainThread(async () =>
                 {
-                    loadingEsVisible = false;
+                    LoadingEsVisible = false;
                     WeakReferenceMessenger.Default.Send(new EmpleadoMensajeria(mensaje));
                     await Shell.Current.Navigation.PopAsync();
                 });
