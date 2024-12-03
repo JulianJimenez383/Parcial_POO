@@ -65,7 +65,7 @@
                                 </Label>
 
                                 <Label Grid.Row="4" Grid.Column="1" Padding="10,15,0,5"
-                                         Text="Eliminar" TextColor="Red"
+                                         Text="Eliminar" TextColor="Red" HorizontalOptions="End"
                                          >
 
                                     <Label.GestureRecognizers>
