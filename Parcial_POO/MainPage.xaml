@@ -8,7 +8,7 @@
 
     <Grid RowDefinitions="Auto,auto,*" RowSpacing="15" Margin="15">
 
-        <Button Grid.Row="0" Text="Nuevo Empleado" Command="{Binding CrearComand}"/>
+        <Button Grid.Row="0" Text="Nuevo Empleado" Command="{Binding CrearCommand}"/>
         <Label Grid.Row="1" Text="lista de empleados" FontSize="Subtitle"/>
 
 
@@ -57,7 +57,7 @@
 
                                     <Label.GestureRecognizers>
                                         <TapGestureRecognizer
-                                            Command="{Binding BindigContext.EditarCommand, Source={x:RelativeSource AncestorType={x:Type ContentPage}}}"
+                                            Command="{Binding BindingContext.EditarCommand, Source={x:RelativeSource AncestorType={x:Type ContentPage}}}"
                                             CommandParameter="{Binding}"
                                             />
                                     </Label.GestureRecognizers>
@@ -70,7 +70,7 @@
 
                                     <Label.GestureRecognizers>
                                         <TapGestureRecognizer
-                                            Command="{Binding BindigContext.EliminarCommand, Source={x:RelativeSource AncestorType={x:Type ContentPage}}}"
+                                            Command="{Binding BindingContext.EliminarCommand, Source={x:RelativeSource AncestorType={x:Type ContentPage}}}"
                                             CommandParameter="{Binding}"
                                             />            
                                     </Label.GestureRecognizers>

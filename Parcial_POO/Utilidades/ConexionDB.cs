@@ -12,7 +12,7 @@ namespace ParcialPOO.Utilidades
                 rutaBaseDatos = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
                 rutaBaseDatos = Path.Combine(rutaBaseDatos, nombreBaseDatos);
 
-            }else if (DeviceInfo.Platform == DevicePlatform.iOS)
+            }else if (DeviceInfo.Platform == DevicePlatform.Android)
             {
                 rutaBaseDatos = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
                 rutaBaseDatos = Path.Combine(rutaBaseDatos, "..", "Library", nombreBaseDatos);
