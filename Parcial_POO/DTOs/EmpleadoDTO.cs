@@ -1,4 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
+using ParcialPOO.DataAccess;
 
 namespace ParcialPOO.DTOs
 {
@@ -7,11 +8,11 @@ namespace ParcialPOO.DTOs
         [ObservableProperty]
         public int idEmpleado;
         [ObservableProperty]
-        public string nombreEmpleado;
+        public string? nombreEmpleado;
         [ObservableProperty]
-        public string cargo;
+        public string? cargo;
         [ObservableProperty]
-        public string correo;
+        public string? correo;
         [ObservableProperty]
         public DateTime fechaCertificacion; 
     }

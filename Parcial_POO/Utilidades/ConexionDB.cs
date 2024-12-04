@@ -7,7 +7,7 @@ namespace ParcialPOO.Utilidades
         public static string DevolverRuta(string nombreBaseDatos)
         {
             string rutaBaseDatos = string.Empty;
-            if (DeviceInfo.Platform == DevicePlatform.Android)
+            if (DeviceInfo.Platform == DevicePlatform.WinUI)
             {
                 rutaBaseDatos = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
                 rutaBaseDatos = Path.Combine(rutaBaseDatos, nombreBaseDatos);
