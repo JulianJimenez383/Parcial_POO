@@ -1,7 +1,7 @@
 ﻿using ObjCRuntime;
 using UIKit;
 
-namespace Parcial_POO
+namespace ParcialPOO
 {
     public class Program
     {

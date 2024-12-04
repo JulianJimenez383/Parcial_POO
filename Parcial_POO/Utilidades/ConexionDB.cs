@@ -1,6 +1,6 @@
 ﻿
 
-namespace Parcial_POO.Utilidades
+namespace ParcialPOO.Utilidades
 {
     public static class ConexionDB
     {

@@ -1,6 +1,6 @@
 ﻿using Foundation;
 
-namespace Parcial_POO
+namespace ParcialPOO
 {
     [Register("AppDelegate")]
     public class AppDelegate : MauiUIApplicationDelegate

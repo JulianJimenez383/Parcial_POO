@@ -1,7 +1,7 @@
-using Parcial_POO.ViewModels;
-using Parcial_POO.Views;
+using ParcialPOO.ViewModels;
+using ParcialPOO.Views;
 
-namespace Parcial_POO.Views;
+namespace ParcialPOO.Views;
 
 public partial class EmpleadoPage : ContentPage
 {

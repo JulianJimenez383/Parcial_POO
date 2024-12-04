@@ -3,15 +3,15 @@ using CommunityToolkit.Mvvm.Messaging;
 using CommunityToolkit.Mvvm.Input;
 
 using Microsoft.EntityFrameworkCore;
-using Parcial_POO.DataAccess;
-using Parcial_POO.DTOs;
-using Parcial_POO.Utilidades;
-using Parcial_POO.Modelos;
+using ParcialPOO.DataAccess;
+using ParcialPOO.DTOs;
+using ParcialPOO.Utilidades;
+using ParcialPOO.Modelos;
 using Microsoft.Maui.Controls.Compatibility.Platform;
 using System.Collections.ObjectModel;
-using Parcial_POO.Views;
+using ParcialPOO.Views;
 
-namespace Parcial_POO.ViewModels
+namespace ParcialPOO.ViewModels
 {
     public partial class MainViewModel : ObservableObject
     {

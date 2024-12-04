@@ -1,4 +1,4 @@
-﻿namespace Parcial_POO
+﻿namespace ParcialPOO
 {
     public partial class AppShell : Shell
     {

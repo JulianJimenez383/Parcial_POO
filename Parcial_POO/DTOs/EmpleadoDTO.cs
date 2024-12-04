@@ -1,6 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 
-namespace Parcial_POO.DTOs
+namespace ParcialPOO.DTOs
 {
     public partial class EmpleadoDTO : ObservableObject
     {

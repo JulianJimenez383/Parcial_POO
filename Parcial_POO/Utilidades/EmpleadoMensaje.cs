@@ -1,6 +1,6 @@
-﻿using Parcial_POO.DTOs;
+﻿using ParcialPOO.DTOs;
 
-namespace Parcial_POO.Utilidades
+namespace ParcialPOO.Utilidades
 {
     public class EmpleadoMensaje
     {

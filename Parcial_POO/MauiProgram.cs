@@ -1,10 +1,10 @@
 ﻿using Microsoft.Extensions.Logging;
-using Parcial_POO.DataAccess;
-using Parcial_POO.ViewModels;
-using Parcial_POO.Views;
+using ParcialPOO.DataAccess;
+using ParcialPOO.ViewModels;
+using ParcialPOO.Views;
 
 
-namespace Parcial_POO
+namespace ParcialPOO
 {
     public static class MauiProgram
     {

@@ -1,10 +1,10 @@
-﻿using Parcial_POO.ViewModels;
+﻿using ParcialPOO.ViewModels;
 
 
 
 
 
-namespace Parcial_POO
+namespace ParcialPOO
 {
     public partial class MainPage : ContentPage
     {

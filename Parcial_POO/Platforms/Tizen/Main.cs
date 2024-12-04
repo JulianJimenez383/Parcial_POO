@@ -2,7 +2,7 @@ using Microsoft.Maui;
 using Microsoft.Maui.Hosting;
 using System;
 
-namespace Parcial_POO
+namespace ParcialPOO
 {
     internal class Program : MauiApplication
     {

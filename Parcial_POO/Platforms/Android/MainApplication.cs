@@ -1,7 +1,7 @@
 ﻿using Android.App;
 using Android.Runtime;
 
-namespace Parcial_POO
+namespace ParcialPOO
 {
     [Application]
     public class MainApplication : MauiApplication

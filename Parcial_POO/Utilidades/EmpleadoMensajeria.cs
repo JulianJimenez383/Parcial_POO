@@ -1,6 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.Messaging.Messages;
 
-namespace Parcial_POO.Utilidades
+namespace ParcialPOO.Utilidades
 {
     public class EmpleadoMensajeria : ValueChangedMessage<EmpleadoMensaje>
     {

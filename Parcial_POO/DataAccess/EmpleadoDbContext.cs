@@ -1,8 +1,8 @@
-﻿using Parcial_POO.Modelos;
-using Parcial_POO.Utilidades;
+﻿using ParcialPOO.Modelos;
+using ParcialPOO.Utilidades;
 using Microsoft.EntityFrameworkCore;
 
-namespace Parcial_POO.DataAccess
+namespace ParcialPOO.DataAccess
 {
     public class EmpleadoDbContext : DbContext
     {
